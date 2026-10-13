@@ -129,3 +129,15 @@ kernel/configs/android-*.cfg
 out*/
 AnyKernel*/
 clang*/
+
+# KernelSU (hanya untuk branch zenith-ksu)
+KernelSU-Next/
+KernelSU/
+
+# Backup files
+*.bak
+b.sh.bak
+
+# Build logs
+*.log
+build*.log
