@@ -134,3 +134,8 @@ build_ksu.log
 build_ksu.log
 build.log
 out/
+build_ksun.log
+build.log
+b.sh.bak
+out-ksun/
+out/
