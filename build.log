@@ -1,5 +1,35 @@
-arch/arm64/Makefile:57: Detected assembler with broken .inst; disassembly will be unreliable
-  CHK     include/config/kernel.release
-Cannot use CONFIG_CC_STACKPROTECTOR_STRONG: -fstack-protector-strong not supported by compiler
-make[1]: *** [/home/youthfx/android/android_kernel_xiaomi_rosemary/Makefile:1324: prepare-compiler-check] Error 1
+  GEN     ./Makefile
+  HOSTCC  scripts/kconfig/conf.o
+  HOSTCC  scripts/kconfig/zconf.tab.o
+  HOSTLD  scripts/kconfig/conf
+drivers/input/touchscreen/mediatek/Kconfig:223:warning: ignoring unsupported character ''
+drivers/input/touchscreen/mediatek/goodix_berlin_driver/Kconfig:5:warning: ignoring unsupported character ''
+drivers/input/touchscreen/mediatek/goodix_berlin_driver/Kconfig:6:warning: ignoring unsupported character ''
+drivers/input/touchscreen/mediatek/goodix_berlin_driver/Kconfig:7:warning: ignoring unsupported character ''
+drivers/input/touchscreen/mediatek/goodix_berlin_driver/Kconfig:8:warning: ignoring unsupported character ''
+drivers/power/supply/mediatek/charger/Kconfig:199:warning: ignoring type redefinition of 'CHARGER_BQ25890' from 'tristate' to 'boolean'
+drivers/input/touchscreen/mediatek/hxchipset_hx83102p/Kconfig:19:warning: choice value used outside its choice group
+drivers/input/touchscreen/mediatek/hxchipset_hx83102p/Kconfig:28:warning: choice value used outside its choice group
+arch/arm64/configs/rosemary_defconfig:473:warning: override: reassigning to symbol KPROBES
+arch/arm64/configs/rosemary_defconfig:474:warning: override: reassigning to symbol KPROBE_EVENTS
+arch/arm64/configs/rosemary_defconfig:475:warning: override: reassigning to symbol HAVE_KPROBES
+#
+# configuration written to .config
+#
+which: no aarch64-linux-gnu-elfedit in (/home/youthfx/toolchain/proton-clang/aarch64-linux-gnu/bin)
+which: no aarch64-linux-gnu-elfedit in (/home/youthfx/toolchain/proton-clang/aarch64-linux-gnu/bin)
+  GEN     ./Makefile
+  HOSTCC  scripts/kconfig/conf.o
+  HOSTCC  scripts/kconfig/zconf.tab.o
+/tmp/ccqaKyot.s: Assembler messages:
+/tmp/ccqaKyot.s:22184: Error: unknown pseudo-op: `.base64'
+/tmp/ccqaKyot.s:22197: Error: unknown pseudo-op: `.base64'
+/tmp/ccqaKyot.s:22202: Error: unknown pseudo-op: `.base64'
+/tmp/ccqaKyot.s:22203: Error: unknown pseudo-op: `.base64'
+/tmp/ccqaKyot.s:22622: Error: unknown pseudo-op: `.base64'
+/tmp/ccqaKyot.s:23228: Error: unknown pseudo-op: `.base64'
+/tmp/ccqaKyot.s:23229: Error: unknown pseudo-op: `.base64'
+make[3]: *** [scripts/Makefile.host:119: scripts/kconfig/zconf.tab.o] Error 1
+make[2]: *** [../Makefile:560: silentoldconfig] Error 2
+make[1]: *** No rule to make target 'include/config/auto.conf', needed by 'include/config/kernel.release'.  Stop.
 make: *** [Makefile:153: sub-make] Error 2
