@@ -1,0 +1,113 @@
+arch/arm64/Makefile:57: Detected assembler with broken .inst; disassembly will be unreliable
+  GEN     ./Makefile
+  HOSTCC  scripts/basic/fixdep
+  HOSTCC  scripts/basic/bin2c
+  HOSTCC  scripts/kconfig/conf.o
+  HOSTCC  scripts/kconfig/zconf.tab.o
+  HOSTLD  scripts/kconfig/conf
+scripts/kconfig/conf  --silentoldconfig Kconfig
+drivers/input/touchscreen/mediatek/Kconfig:223:warning: ignoring unsupported character ''
+drivers/input/touchscreen/mediatek/goodix_berlin_driver/Kconfig:5:warning: ignoring unsupported character ''
+drivers/input/touchscreen/mediatek/goodix_berlin_driver/Kconfig:6:warning: ignoring unsupported character ''
+drivers/input/touchscreen/mediatek/goodix_berlin_driver/Kconfig:7:warning: ignoring unsupported character ''
+drivers/input/touchscreen/mediatek/goodix_berlin_driver/Kconfig:8:warning: ignoring unsupported character ''
+drivers/power/supply/mediatek/charger/Kconfig:199:warning: ignoring type redefinition of 'CHARGER_BQ25890' from 'tristate' to 'boolean'
+drivers/input/touchscreen/mediatek/hxchipset_hx83102p/Kconfig:19:warning: choice value used outside its choice group
+drivers/input/touchscreen/mediatek/hxchipset_hx83102p/Kconfig:28:warning: choice value used outside its choice group
+arch/arm64/Makefile:57: Detected assembler with broken .inst; disassembly will be unreliable
+  CHK     include/config/kernel.release
+  UPD     include/config/kernel.release
+  GEN     ./Makefile
+  CHK     include/generated/uapi/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+rm -f dtboimg.cfg.tmp
+echo /home/youthfx/android/android_kernel_xiaomi_rosemary/out/arch/arm64/boot/dts/mediatek/rosemary.dtbo >>dtboimg.cfg.tmp; echo " id=0" >>dtboimg.cfg.tmp; 
+if ! cmp -s dtboimg.cfg.tmp dtboimg.cfg; then \
+	mv dtboimg.cfg.tmp dtboimg.cfg; \
+else \
+	rm dtboimg.cfg.tmp; \
+fi
+  Using .. as source for kernel
+  HOSTCC  scripts/dtc/dtc.o
+  HOSTCC  scripts/dtc/flattree.o
+  HOSTCC  scripts/genksyms/genksyms.o
+  CC      scripts/mod/empty.o
+gcc: error: unrecognized command-line option ‘-mlittle-endian’
+  HOSTCC  scripts/mod/mk_elfconfig
+make[3]: *** [../scripts/Makefile.build:360: scripts/mod/empty.o] Error 1
+make[3]: *** Waiting for unfinished jobs....
+  HOSTCC  scripts/genksyms/parse.tab.o
+  HOSTCC  scripts/selinux/genheaders/genheaders
+make[2]: *** [../scripts/Makefile.build:674: scripts/mod] Error 2
+  CC      kernel/bounds.s
+make[2]: *** Waiting for unfinished jobs....
+  HOSTCC  scripts/dtc/fstree.o
+gcc: error: unrecognized command-line option ‘-mlittle-endian’
+make[2]: *** [.././Kbuild:22: kernel/bounds.s] Error 1
+make[1]: *** [/home/youthfx/android/android_kernel_xiaomi_rosemary/Makefile:1252: prepare0] Error 2
+make[1]: *** Waiting for unfinished jobs....
+  HOSTCC  scripts/genksyms/lex.lex.o
+  HOSTCC  scripts/selinux/mdp/mdp
+  HOSTCC  scripts/dtc/data.o
+  HOSTCC  scripts/dtc/livetree.o
+  HOSTCC  scripts/dtc/treesource.o
+  HOSTCC  scripts/dtc/srcpos.o
+  HOSTCC  scripts/dtc/checks.o
+  HOSTCC  scripts/dtc/util.o
+  HOSTCC  scripts/dtc/dtc-lexer.lex.o
+  HOSTCC  scripts/dtc/dtc-parser.tab.o
+  HOSTLD  scripts/genksyms/genksyms
+*GPU CONFIG_MTK_FREQ_HOPPING = Y
+*GPU MT_GPUFREQ_BRINGUP = 0
+*GPU MT_GPUFREQ_GED_READY = 1
+*GPU MT_GPUFREQ_KICKER_PBM_READY = 1
+*GPU MT_GPUFREQ_STATIC_PWR_READY2USE = 1
+*GPU MT_GPUFREQ_LOW_BATT_VOLT_PROTECT = 1
+*GPU MT_GPUFREQ_BATT_PERCENT_PROTECT = 1
+*GPU MT_GPUFREQ_BATT_OC_PROTECT = 1
+*GPU MT_GPUFREQ_DYNAMIC_POWER_TABLE_UPDATE = 1
+*GPU MT_GPUFREQ_SETTLE_TIME_PROFILE = 0
+../drivers/misc/mediatek/base/power/qos/Makefile:46: extraneous text after 'else' directive
+..
+..
+FDVT: Drv use 5.0 folder
+../drivers/misc/mediatek/ccu/src/Makefile:29: CCU_MAKE_FILE_CALLED
+..
+..
+  HOSTLD  scripts/dtc/dtc
+..
+make[1]: *** [/home/youthfx/android/android_kernel_xiaomi_rosemary/Makefile:608: scripts] Error 2
+..
+../drivers/misc/mediatek/connectivity/common/Kbuild:183: KERNEL_VERSION_SUPPORT_CHIPID_LIST=[6785]
+..
+MTK_GPU_VERSION 1 = mali
+imgsensor drv by platform ov64b40semco_mipi_raw/ ov64b40ofilm_mipi_raw/ ov13b10sunny_mipi_raw/ ov13b10ofilm_mipi_raw/ imx355ofilm_mipi_raw/ imx355sunny_mipi_raw/ ov02b1bofilm_mipi_raw/ gc02m1ofilm_mipi_raw/ gc02m1sunny_mipi_raw/ gc02m1bsunny_mipi_mono/
+imgsensor drv by platform 
+************  drivers/trusty/mtee-kree mk ************
+*MTK_GPU_VERSION 2 = bifrost
+*MTK_GPU_VERSION 3 = r25p0
+mali MTK evironment, building r19p0 DDK
+mtk-Kbuild CONFIG_MALI_PLATFORM_THIRDPARTY := y
+mtk-Kbuild CONFIG_MALI_PLATFORM_THIRDPARTY_NAME := "mt6785"
+*GPU defined GPU BM QoS 2.0
+mali MTK evironment, building r19p0 DDK
+mtk-Kbuild CONFIG_MALI_PLATFORM_THIRDPARTY := y
+mtk-Kbuild CONFIG_MALI_PLATFORM_THIRDPARTY_NAME := "mt6785"
+*GPU defined GPU BM QoS 2.0
+mali MTK evironment, building r19p0 DDK
+mtk-Kbuild CONFIG_MALI_PLATFORM_THIRDPARTY := y
+mtk-Kbuild CONFIG_MALI_PLATFORM_THIRDPARTY_NAME := "mt6785"
+*GPU defined GPU BM QoS 2.0
+"CONFIG_MICROTRUST_TEE_VERSION="400""
+"CONFIG_MICROTRUST_TEE_SUPPORT=y"
+"CONFIG_MICROTRUST_TZ_DRIVER=Y"
+"CONFIG_MICROTRUST_VFS_DRIVER=Y"
+"CONFIG_MICROTRUST_FP_DRIVER=Y"
+"CONFIG_MICROTRUST_DEBUG="
+"CONFIG_MICROTRUST_TEST_DRIVERS="
+TCORE_UT_TESTS_SUPPORT = n
+TCORE_PROFILING_SUPPORT = n
+TCORE_PROFILING_AUTO_DUMP = n
+TCORE_MEMORY_LEAK_DETECTION_SUPPORT = n
+make: *** [Makefile:153: sub-make] Error 2

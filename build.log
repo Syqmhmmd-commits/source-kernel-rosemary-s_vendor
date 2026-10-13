@@ -1,0 +1,5 @@
+arch/arm64/Makefile:57: Detected assembler with broken .inst; disassembly will be unreliable
+  CHK     include/config/kernel.release
+Cannot use CONFIG_CC_STACKPROTECTOR_STRONG: -fstack-protector-strong not supported by compiler
+make[1]: *** [/home/youthfx/android/android_kernel_xiaomi_rosemary/Makefile:1324: prepare-compiler-check] Error 1
+make: *** [Makefile:153: sub-make] Error 2
