@@ -131,3 +131,6 @@ AnyKernel*/
 clang*/
 build.log
 build_ksu.log
+build_ksu.log
+build.log
+out/
