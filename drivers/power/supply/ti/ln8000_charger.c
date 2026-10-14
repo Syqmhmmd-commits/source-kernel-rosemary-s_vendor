@@ -1518,10 +1518,12 @@ static int ln8000_probe(struct i2c_client *client, const struct i2c_device_id *i
 
     /* detect device on connected i2c bus */
     ret = i2c_smbus_read_byte_data(client, LN8000_REG_DEVICE_ID);
+    dev_info(&client->dev, "LN8000_REG_DEVICE_ID=0x%x, expected=0x%x\n", ret, LN8000_DEV_ID);
     if (ret != LN8000_DEV_ID ) {
         dev_err(&client->dev, "fail to detect ln8000 on i2c_bus(addr=0x%x)\n", client->addr);
         return -ENODEV;
     }
+
     dev_info(&client->dev, "device id=0x%x\n", ret);
     set_ln8000_load_flag(true);
 

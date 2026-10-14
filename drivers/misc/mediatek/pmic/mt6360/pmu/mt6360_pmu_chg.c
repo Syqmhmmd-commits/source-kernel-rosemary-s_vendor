@@ -2054,7 +2054,7 @@ static const struct charger_ops mt6360_chg_ops = {
 };
 
 static const struct charger_properties mt6360_chg_props = {
-	.alias_name = "mt6360_chg",
+	.alias_name = "primary_chg",
 };
 
 static irqreturn_t mt6360_pmu_chg_treg_evt_handler(int irq, void *data)
