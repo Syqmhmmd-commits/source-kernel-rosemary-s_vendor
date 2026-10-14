@@ -5521,6 +5521,11 @@ page_owner=on loop.max_part=16";
 	};
 
 	subpmic_pmu_eint: mt6360_pmu_eint {
+		pins_cmd_dat {
+			pinmux = <PINMUX_GPIO3__FUNC_GPIO3>;
+			slew-rate = <0>;
+			bias-pull-up = <11>;
+		};
 	};
 
 	irtx_pwm:irtx_pwm {
