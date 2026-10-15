@@ -1111,6 +1111,7 @@ void cp_statemachine(struct cp_qc30_data *chip)
 			sys_config.bus_curr_lp_lmt = chip->qc3p_bus_curr_max;
 			pm_state.ibus_lmt_curr = sys_config.bus_curr_lp_lmt;
 			cp_set_qc_bus_protections(HVDCP3_P_CLASSA_18W);
+
 		} else if (pm_state.hvdcp3_type == HVDCP3_P_CLASSB_27W) {
 			sys_config.bus_volt_alarm_threshold = BUS_OVP_ALARM_THRESHOLD_QC35;
 			sys_config.bat_curr_lp_lmt = HVDCP3_P_CLASSB_BAT_CURRENT_MA;
